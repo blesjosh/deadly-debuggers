@@ -1,11 +1,11 @@
 import React from 'react';
 import './Home.css';
-import projects from '../assets/SquadProjects.png';
-import kalviumSection from '../assets/kalvium-section.png';
-import meetsquad from '../assets/meetsquad.jpg';
-import quote from '../assets/quote.png';
-import gallery from '../assets/gallery.png';
-import squad76 from '../assets/Squad76.png';
+import projects from '../assets/Homepage/SquadProjects.png';
+import kalviumSection from '../assets/Homepage/kalvium-section.png';
+import meetsquad from '../assets/Homepage/meetsquad.jpg';
+import quote from '../assets/Homepage/quote.png';
+import gallery from '../assets/Homepage/gallery.png';
+import squad76 from '../assets/Homepage/Squad76.png';
 import { Link } from 'react-router';
 
 const Home = () => {
@@ -33,7 +33,9 @@ const Home = () => {
         <img src={quote} className='h-[120%] ' alt="" />
       </div>
       <div className="item seven">
-        <img src={gallery} className='h-[100%]' alt="" />
+        <Link to={'/gallery'}>
+        <img src={gallery} className='ml-[100px] h-[90%] w-[50%] flex ' alt="" />
+        </Link>
       </div>
 
     </div>

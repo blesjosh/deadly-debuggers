@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { Members } from './components/Members.jsx'
+import Gallery from './components/gallery.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path='/' element={<App/>}/>
       <Route path='/member-page' element={<Members/>}/>
+      <Route path='/gallery' element={<Gallery/>}/>
     </Routes>
     </BrowserRouter>
   </StrictMode>,
