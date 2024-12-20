@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Helvetica;
+    color: white;
+  }
+  
+  #main {
+    width: 70%; 
+    height: 90vh; 
+    margin: 5vh auto; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    gap: 20px;
+    /* border-radius: 41px; */
+    grid-template-areas:
+      "one one one one one one"
+      "one one one one one one"
+      "one one one one one one"
+      "one one one one one one"
+      "one one one one one one"
+      "three three four four five five"
+      "three three four four five five"
+      "three three four four five five"
+      "three three four four five five"
+      "three three four four five five"
+      "three three seven seven five five"
+      "six six seven seven five five"
+      "six six seven seven five five"
+      "six six seven seven five five";
+  }
+  
+  .item {
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .one {
+    grid-area: one;
+    background-color: #F4EFE6;
+    color: #004C41;
+    font-family: Helvetica;
+    font-weight: 900;
+    font-size: 145px;
+  }
+  
+  .two {
+    
+    grid-area: two;
+    background-color: #004C41;
+    align-items: flex-start;
+    font-size: 59px;
+    padding-top: 50px;
+    color: #F4EFE6;
+    font-weight: bold;
+
+  }
+  
+  .three {
+    grid-area: three;
+    background-color: #d50000;
+  }
+  
+  .four {
+    grid-area: four;
+    background-color: #F4EFE6;
+  }
+  
+  .five {
+    grid-area: five;
+    background-color: #f4efe6;
+  }
+  
+  .six {
+    grid-area: six;
+    background-color: #F4EFE6;
+  }
+  
+  .seven {
+    grid-area: seven;
+    background-color: #004C41;
+  }
+  
