@@ -1,88 +1,122 @@
 body {
-    background-color: black;
-    margin: 0;
-    font-family: Helvetica;
-    color: white;
-  }
-  
-  #main {
-    width: 70%; 
-    height: 90vh; 
-    margin: 5vh auto; 
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(14, 1fr);
-    gap: 20px;
-    /* border-radius: 41px; */
-    grid-template-areas:
-      "one one one one one one"
-      "one one one one one one"
-      "one one one one one one"
-      "one one one one one one"
-      "one one one one one one"
-      "three three four four five five"
-      "three three four four five five"
-      "three three four four five five"
-      "three three four four five five"
-      "three three four four five five"
-      "three three seven seven five five"
-      "six six seven seven five five"
-      "six six seven seven five five"
-      "six six seven seven five five";
-  }
-  
-  .item {
-    padding: 20px;
-    border-radius: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .one {
-    grid-area: one;
-    background-color: #F4EFE6;
-    color: #004C41;
-    font-family: Helvetica;
-    font-weight: 900;
-    font-size: 145px;
-  }
-  
-  .two {
-    
-    grid-area: two;
-    background-color: #004C41;
-    align-items: flex-start;
-    font-size: 59px;
-    padding-top: 50px;
-    color: #F4EFE6;
-    font-weight: bold;
+  background-color: black;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
 
-  }
-  
-  .three {
-    grid-area: three;
-    background-color: #d50000;
-  }
-  
-  .four {
-    grid-area: four;
-    background-color: #F4EFE6;
-  }
-  
-  .five {
-    grid-area: five;
-    background-color: #f4efe6;
-  }
-  
-  .six {
-    grid-area: six;
-    background-color: #F4EFE6;
-  }
-  
-  .seven {
-    grid-area: seven;
-    background-color: #004C41;
-  }
-  
+#main {
+  width: 70%;
+  height: 90vh;
+  margin: 5vh auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 20px;
+  grid-template-areas:
+    "one one one one one one"
+    "one one one one one one"
+    "one one one one one one"
+    "one one one one one one"
+    "one one one one one one"
+    "three three four four five five"
+    "three three four four five five"
+    "three three four four five five"
+    "three three four four five five"
+    "three three four four five five"
+    "three three seven seven five five"
+    "six six seven seven five five"
+    "six six seven seven five five"
+    "six six seven seven five five"
+    "six six seven seven five five"
+    
+}
+
+.item {
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  grid-area: one;
+  background-color: #F4EFE6;
+  color: #004C41;
+  font-weight: 900;
+  font-size: 145px;
+}
+
+.two {
+  grid-area: two;
+  background-color: #004C41;
+  align-items: flex-start;
+  font-size: 59px;
+  padding-top: 50px;
+  color: #F4EFE6;
+  font-weight: bold;
+}
+
+.three {
+  grid-area: three;
+  background-color: #d50000;
+}
+
+.four {
+  grid-area: four;
+  background-color: #F4EFE6;
+}
+
+.five {
+  grid-area: five;
+  background-color: #f4efe6;
+}
+
+.six {
+  grid-area: six;
+  background-color: #F4EFE6;
+}
+
+.seven {
+  grid-area: seven;
+  background-color: #004C41;
+}
+
+/* Flex container for ID cards */
+.flex-container {
+  grid-area: id;
+  display: flex;
+  justify-content: space-around; /* Ensures even spacing */
+  align-items: center;
+  gap: 30px; /* Adds spacing between the two cards */
+  padding: 20px;
+  background-color: #222; /* Optional: adds a contrasting background */
+  border-radius: 10px; /* Adds a rounded container for the cards */
+}
+
+.id-card {
+  text-align: center;
+  width: 180px; /* Adjusts card size */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #F4EFE6;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Adds shadow for emphasis */
+  color: #004C41;
+}
+
+.id-card img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 10px;
+  border: 2px solid #004C41; /* Adds a border around the image */
+}
+
+.id-card p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222; /* Optional: differentiates text color */
+}
